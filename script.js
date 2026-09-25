@@ -36,4 +36,10 @@ Create a new function 'playRound'
 
   Increment the 'humanScore' or 'computerScore' based on round winner
 
+Create a new function 'playGame'
+
+  Move the 'playRound' function and score variables inside the 'playGame' function
+
+  Play 5 rounds in total by calling 'playRound' 5 times
+
 */
