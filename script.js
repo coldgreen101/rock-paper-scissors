@@ -31,6 +31,7 @@ Create a new function 'playRound'
   Define 'humanChoice' and 'computerChoice' as the function's parameters
 
   Make 'humanChoice' case-insensitive
+    convert 'humanChoice' to lower case always before RETURNING the value
 
   Output result of round (e.g. "You lose! Paper beats Rock") to the console
 
@@ -64,7 +65,36 @@ function getHumanChoice() {
   return prompt('Rock, paper or scissors?', '');
 }
 
-console.log(getHumanChoice());
+// console.log(getHumanChoice());
 
 let computerScore = 0;
 let humanScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+  humanChoice = humanChoice.toLowerCase();
+
+  if (humanChoice === computerChoice) {
+    console.log('The round is a draw!');
+  } else if (humanChoice === 'rock' && computerChoice === 'paper') {
+    computerScore++;
+    console.log('You lose! Paper beats rock');
+  } else if (humanChoice === 'rock' && computerChoice === 'scissors') {
+    humanScore++;
+    console.log('You win! Rock beats scissors');
+  } else if (humanChoice === 'paper' && computerChoice === 'rock') {
+    humanScore += 1;
+    console.log('You win! Paper beats rock');
+  } else if (humanChoice === 'paper' && computerChoice === 'scissors') {
+    computerScore++;
+    console.log('You lose! Scissors beats paper');
+  } else if (humanChoice === 'scissors' && computerChoice === 'paper') {
+    humanScore++;
+    console.log('You win! Scissors beats paper');
+  } else {
+    computerScore++;
+    console.log('You lose! Rock beats scissors');
+  }
+}
+
+console.log(playRound('RoCk', getComputerChoice()));
+console.log(humanScore, computerScore);
