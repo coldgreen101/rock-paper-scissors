@@ -45,13 +45,13 @@ Create a new function 'playGame'
 */
 
 function getComputerChoice() {
-  let randomNum = Math.floor(Math.random() * 30 + 1);
+  let randomNum = Math.floor(Math.random() * 3 + 1);
 
   console.log(randomNum);
 
-  if (randomNum <= 10) {
+  if (randomNum === 1) {
     return 'rock';
-  } else if (randomNum > 10 && randomNum <= 20) {
+  } else if (randomNum === 2) {
     return 'paper';
   } else {
     return 'scissors';
