@@ -20,10 +20,20 @@ Create a function named 'getHumanChoice'
 
   Test output in console
 
+  NOTE: Assumme user will always enter a valid choice
 
 Create a variable named 'humanScore' and 'computerScore' in the global scope
 
-Initialize the variables with the value of 0
+Initialize 'humanScore' and 'computerScore' with the value of 0
 
-NOTE: Assumme user will always enter a valid choice
+Create a new function 'playRound'
+
+  Define 'humanChoice' and 'computerChoice' as the function's parameters
+
+  Make 'humanChoice' case-insensitive
+
+  Output result of round (e.g. "You lose! Paper beats Rock") to the console
+
+  Increment the 'humanScore' or 'computerScore' based on round winner
+
 */
