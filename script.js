@@ -43,3 +43,19 @@ Create a new function 'playGame'
   Play 5 rounds in total by calling 'playRound' 5 times
 
 */
+
+function getComputerChoice() {
+  let randomNum = Math.floor(Math.random() * 30 + 1);
+
+  console.log(randomNum);
+
+  if (randomNum <= 10) {
+    return 'rock';
+  } else if (randomNum > 10 && randomNum <= 20) {
+    return 'paper';
+  } else {
+    return 'scissors';
+  }
+}
+
+console.log(getComputerChoice());
