@@ -20,5 +20,10 @@ Create a function named 'getHumanChoice'
 
   Test output in console
 
+
+Create a variable named 'humanScore' and 'computerScore' in the global scope
+
+Initialize the variables with the value of 0
+
 NOTE: Assumme user will always enter a valid choice
 */
